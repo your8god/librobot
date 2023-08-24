@@ -1,0 +1,10 @@
+^D:\PROJECTS\LIBROBOT\BUILD\CMAKEFILES\DA6FAAB2BAB4D59BDB3F40F73C854CF9\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Projects/librobot -BD:/Projects/librobot/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Projects/librobot/build/librobot.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
