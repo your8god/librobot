@@ -26,7 +26,7 @@ public:
 	virtual void setMotion(const T& motion) = 0;
 	T getPosition() const { return m_point; };
 
-protected:
+public:
 	T m_point;
 };
 

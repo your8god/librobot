@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(librobot VERSION 0.1.0 LANGUAGES C CXX)
 
-add_library(librobot librobot.cpp)
+set(LIB_NAME new_librobot)
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+set(CMAKE_CXX_STANDARD 17)
+
+add_subdirectory(lib)
+add_subdirectory(prog)

@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include "librobot.h"
 
 #define END_BLOCK std::cout << std::endl << std::endl << std::endl;
@@ -54,7 +54,4 @@ int main()
     auto resP3di = r3di.getPosition();
     std::cout << "Res pos of Robot3D int:\n" << resP3di.x << " " << resP3di.y << " " << resP3di.z << std::endl;
     END_BLOCK;
-
-
-    system("pause");
 }
